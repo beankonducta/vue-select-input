@@ -1,15 +1,96 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <VueSelectInput :items="items" @selected="selectedItem === $event" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VueSelectInput from './components/VueSelectInput.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    VueSelectInput
+  },
+  data() {
+    return {
+      items: [
+        {
+          id: 1,
+          name: 'John Doe',
+          email: '',
+        },
+        {
+          id: 2,
+          name: 'Jane Doe',
+          email: '',
+        },
+        {
+          id: 3,
+          name: 'John Smith',
+          email: '',
+        },
+        {
+          id: 4,
+          name: 'Jane Smith',
+          email: '',
+        },
+        {
+          id: 5,
+          name: 'Peter Jenkins',
+          email: '',
+        },
+        {
+          id: 6,
+          name: 'Peter Parker',
+          email: '',
+        },
+        {
+          id: 7,
+          name: 'Peter Pan',
+          email: '',
+        },
+        {
+          id: 8,
+          name: 'Peter Griffin',
+          email: '',
+        },
+        {
+          id: 9,
+          name: 'Peter Quill',
+          email: '',
+        },
+        {
+          id: 10,
+          name: 'Peter Venkman',
+          email: '',
+        },
+        {
+          id: 11,
+          name: 'Peter Parker',
+          email: '',
+        },
+        {
+          id: 12,
+          name: 'Peter Pan',
+          email: '',
+        },
+        {
+          id: 13,
+          name: 'Peter Griffin',
+          email: '',
+        },
+        {
+          id: 14,
+          name: 'Peter Quill',
+          email: '',
+        },
+        {
+          id: 15,
+          name: 'Peter Venkman',
+          email: '',
+        }
+      ],
+      selectedItem: null
+    }
   }
 }
 </script>
