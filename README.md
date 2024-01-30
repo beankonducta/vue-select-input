@@ -1,24 +1,3 @@
-# vue-select-input
+Copy the VueSelectInput.vue code into a file under the same name in your project. Drop in wherever you would use a select tag in the template.
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Easy!
